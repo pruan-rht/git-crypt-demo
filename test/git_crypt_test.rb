@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require 'yaml'
-require 'pry-byebug'
 
 """
 test git-crypt usage
