@@ -16,7 +16,7 @@ if git_encrypted? config_path
   print("File is encrypted...attempting to unlock...\n")
   `git-crypt unlock`
 end
-
+print("\nReading in config.yaml...\n")
 conf = YAML.load(open(config_path))#config_pathcreds/config.yaml'))
 username = conf.dig('services', 'mongodb', 'user')
 password = conf.dig('services', 'mongodb', 'password')
